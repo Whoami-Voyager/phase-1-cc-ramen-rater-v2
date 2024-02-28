@@ -4,6 +4,9 @@ const handleClick = (ramen) => {
   const description = document.querySelector("#ramen-detail")
   image.addEventListener('click', () => {
     const ramName = document.querySelector(".name")
+    const ramNew = document.querySelector("#ramen-menu")
+    const rating = document.querySelector("#rating-display")
+    const comment = document.querySelector("#comment-display")
     const restaurantName = document.querySelector(".restaurant")
     ramName.textContent = ramen.name
     restaurantName.textContent = ramen.restaurant
@@ -14,7 +17,8 @@ const handleClick = (ramen) => {
 const addSubmitListener = () => {
   const submit = document.querySelector("#submit-button")
   submit.addEventListener('click', 'submit', () => {
-    const ramNew = document.querySelector("#ramen-menu")
+
+
   })
 }
 
